@@ -1,0 +1,1589 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <!-- dark mode support - works for mac os outlook -->
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <title>Subscription Change AR</title>
+  <link rel="canonical"
+    href="/content/campaigns/wcax-campaigns/transactional-emails/auto-replinishment/subscription-change-ar.html">
+  <link rel="shortcut icon" href="/libs/settings/wcm/designs/default/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style type="text/css">
+    /* styles to account for Outlook/Hotmail peculiarities */
+    .ExternalClass {
+      width: 100%;
+    }
+
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    table {
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    .separator {
+      border-bottom: 1px solid #cacaca;
+    }
+
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
+
+    /* triggers "view in browser" link in Outlook */
+    #outlook a {
+      padding: 0;
+    }
+
+    /* template styles */
+    .ac-content-cell img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .ac-content-cell p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* styles for responsive layout */
+    @media only screen and (max-width: 767px) {
+      #ac-body-cell {
+        width: 100% !important;
+        padding: 0 !important;
+      }
+
+      #ac-content-table {
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+
+      .ac-content-cell img {
+        width: 100% !important;
+      }
+
+      .ac-column-cell {
+        display: block !important;
+        width: auto !important;
+      }
+    }
+
+    /* iOS BLUE LINKS */
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    /* GMAIL BLUE LINKS */
+    u+#body a {
+      color: inherit;
+      text-decoration: none;
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+    }
+  </style>
+  <style type="text/css">
+    @media (max-width: 767px) {
+      .reward-detail-component {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+      }
+
+      .reward-detail-component__resizetofull {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+      }
+
+      .reward-detail-component__container {
+        padding: 0 16px !important;
+      }
+    }
+  </style>
+  <style type="text/css">
+    body {
+      margin: 0;
+      font-family: Nunito Sans, Arial, Sans-Serif !important;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 1.2;
+      font-size: 12px;
+    }
+
+    @media (min-width: 768px) {
+      body {
+        font-size: 14px;
+      }
+    }
+
+    button,
+    td {
+      font-family: Nunito Sans, Arial, Sans-Serif !important;
+    }
+
+    /* header start */
+    .mail-header {
+      margin: 0 auto;
+      color: #757575;
+    }
+
+    .mail-header .header-background {
+      height: 105px;
+    }
+
+    .mail-header a {
+      color: #757575;
+      text-decoration: underline;
+    }
+
+    .mail-header .mail-header-banner {
+      font-size: 21px;
+      font-weight: 400;
+    }
+
+    @media (min-width: 768px) {
+      .mail-header .mail-header-banner {
+        font-size: 42px;
+      }
+    }
+
+    .mail-header .img-cart {
+      height: 64px;
+    }
+
+    @media (max-width: 767px) {
+
+      .mail-header,
+      .mail-header .header-background {
+        height: 56px !important;
+      }
+
+      .mail-header .mail-header-banner {
+        font-size: 21px !important;
+      }
+
+      .mail-header .img-cart {
+        height: 32px !important;
+      }
+    }
+
+    /* header end */
+    /* mobile app component start */
+    .mail-mobile-app {
+      margin: 0 auto;
+      font-family: Nunito Sans, Arial, Sans-Serif !important;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 1.2;
+      font-size: 12px;
+      font-size: 14px;
+      color: #2c2a29;
+    }
+
+    @media (min-width: 768px) {
+      .mail-mobile-app {
+        font-size: 14px;
+      }
+    }
+
+    .mail-mobile-app .resizetofull {
+      width: 100% !important;
+      height: auto !important;
+      margin: 0 auto !important;
+    }
+
+    .mobile-app-gap,
+    .mobile-app-left,
+    .mobile-app-right {
+      background: #f6f6f6;
+    }
+
+    .mobile-app-right td {
+      padding: 0 32px;
+    }
+
+    @media (min-width: 768px) {
+      .mobile-app-right td {
+        padding: 0 32px 0 16px;
+      }
+    }
+
+    .mobile-app-buttons {
+      text-align: center;
+    }
+
+    .mobile-app-buttons td.mobile-app-button {
+      background: #f6f6f6;
+    }
+
+    .mobile-app-buttons a {
+      color: #2c2a29 !important;
+      text-decoration: none;
+    }
+
+    .mobile-app-links td {
+      padding: 0;
+    }
+
+    @media (min-width: 768px) {
+      .mobile-app-links td {
+        padding: 0;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .mobile-app-links {
+        text-align: center;
+        width: 100%;
+      }
+
+      .mobile-app-links td {
+        display: block;
+      }
+
+      .mobile-app-buttons .mobile-app-button {
+        width: 100%;
+      }
+
+      .mobile-app-buttons td {
+        display: block;
+      }
+
+      .mobile-app-buttons a {
+        font-size: 12px !important;
+      }
+
+      .mobile-app-gap,
+      .mobile-app-left,
+      .mobile-app-right {
+        display: block;
+        width: 100% !important;
+        text-align: center;
+      }
+
+      .mobile-app-right a {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .mobile-show-table {
+        display: table !important;
+        overflow: visible !important;
+        height: auto !important;
+        max-height: inherit !important;
+      }
+    }
+
+    /* mobile app component end */
+    /* footer component start */
+    .mail-footer,
+    .mail-social-links {
+      margin: 0 auto;
+    }
+
+    .mail-footer {
+      font-family: Nunito Sans, Arial, Sans-Serif !important;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 1.2;
+      font-size: 16px;
+      color: #2C2A29;
+    }
+
+    @media (min-width: 768px) {
+      .mail-footer {
+        font-size: 16px;
+      }
+    }
+
+    .mail-footer td {
+      padding: 0 32px;
+    }
+
+    @media (max-width: 767px) {
+      .mail-footer td {
+        padding: 0 16px !important;
+      }
+    }
+
+    .mail-footer a {
+      color: #2C2A29 !important;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .mail-footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media only screen and (min-width: 768px) {
+      .hide-desktop {
+        padding: 0;
+        display: none;
+        border: 0 none;
+        font-size: 0;
+        line-height: 0;
+        opacity: 0;
+        mso-hide: all;
+        height: 0;
+        width: 0;
+        max-height: 0;
+        visibility: hidden;
+        overflow: hidden;
+        margin: 0;
+        background: transparent;
+      }
+    }
+
+    /* footer component end */
+    @media only screen and (max-width: 767px) {
+      .hide-mobile {
+        padding: 0;
+        display: none;
+        border: 0 none;
+        font-size: 0;
+        line-height: 0;
+        opacity: 0;
+        mso-hide: all;
+        height: 0;
+        width: 0;
+        max-height: 0;
+        visibility: hidden;
+        overflow: hidden;
+        margin: 0;
+        background: transparent;
+      }
+
+      .order-container {
+        padding: 0 16px !important;
+      }
+
+      .resizetofull {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+      }
+
+      /*Place this on main table hosting email - Makes it fluid*/
+      .colstack {
+        display: block !important;
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-bottom: 0 !important;
+        border-left: 0px !important;
+      }
+
+      .mobile-hide {
+        display: none !important;
+      }
+
+      /*Hide images from mobile - but keeps it in desktop */
+      .mobile-show {
+        display: block !important;
+        overflow: visible !important;
+        height: auto !important;
+        max-height: inherit !important;
+      }
+
+      /* Mobile padding top */
+      .padTop10 {
+        padding-top: 10px !important;
+      }
+
+      /* Mobile padding bottom */
+      .padBottom10 {
+        padding-bottom: 10px !important;
+      }
+
+      /* Mobile padding left */
+      .noPadLeft {
+        padding-left: 0 !important;
+      }
+
+      .center {
+        text-align: center !important;
+        margin: 0 auto !important;
+      }
+
+      /* center */
+      .left {
+        text-align: left !important;
+        margin: 0 auto !important;
+      }
+
+      /* left */
+      .right {
+        text-align: right !important;
+        margin: 0 auto !important;
+      }
+
+      /* right */
+      .fontSize14 {
+        font-size: 14px !important;
+        line-height: 16px !important;
+      }
+
+      .fontSize18 {
+        font-size: 18px !important;
+        line-height: 20px !important;
+      }
+
+      /* Mobile font size */
+      .noBorder {
+        border: none !important;
+      }
+    }
+
+    .order-notes ol,
+    .order-notes ul {
+      font-family: Nunito Sans, Arial, Sans-Serif;
+      color: #4b4b4b;
+      font-size: 12px;
+      line-height: 1.33;
+      font-weight: normal;
+      letter-spacing: normal;
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    @media only screen and (max-width: 767px) {
+
+      .order-notes ol,
+      .order-notes ul {
+        padding-inline-start: 20px;
+      }
+
+      .order-notes .order-notes-content-wrapper {
+        padding: 20px 16px 0px 16px !important;
+      }
+
+      .order-notes .order-notes-container {
+        padding: 0px 16px !important;
+      }
+
+      .order-notes .order-notes-manage-account {
+        padding: 10px 16px !important;
+      }
+
+      .order-notes .order-notes-manage-account-table {
+        padding-top: 10px !important;
+      }
+
+      .button {
+        padding: 20px 16px 0px 16px !important;
+      }
+
+      @media (max-width: 767px) {
+        .order-detail-component {
+          width: 100% !important;
+          height: auto !important;
+          margin: 0 auto !important;
+        }
+
+        .order-detail-component__resizetofull {
+          width: 100% !important;
+          height: auto !important;
+          margin: 0 auto !important;
+        }
+
+        .order-detail-component__container {
+          padding: 0 16px !important;
+        }
+
+        .order-detail-component__fontSize14 {
+          font-size: 14px !important;
+          line-height: 1.43 !important;
+          letter-spacing: normal !important;
+        }
+
+        .order-detail-component__mbvc1 {
+          width: 49% !important;
+          padding-right: 10px !important;
+        }
+
+        .order-detail-component__mbvc2 {
+          width: 11% !important;
+        }
+
+        .order-detail-component__mbvc3 {
+          width: 40% !important;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .two-col-banner .two-col-banner-column {
+          display: block !important;
+          width: 100% !important;
+          height: auto !important;
+          max-width: 100% !important;
+        }
+      }
+
+      @media (max-width: 767px) {
+
+        .two-col-banner .two-col-banner-column,
+        .left-copy-right-image-column,
+        .left-copy-right-image-column img {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .left-copy-right-image .left-copy-right-image-column--img table td {
+          padding-right: 30px !important;
+          padding-bottom: 0 !important;
+        }
+
+        .left-copy-right-image td.left-copy-right-image-column--text-content {
+          padding: 21px 30px !important;
+        }
+
+        .twocolumn {
+          padding-left: 22px !important;
+          padding-right: 22px !important;
+          width: auto !important;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      #orderDetails2 {
+        margin: 12px 0px !important;
+      }
+
+      .fontSize20 {
+        font-size: 20px !important;
+        line-height: 22px !important;
+      }
+
+      .twoColTableHeading {
+        padding: 0px 16px !important;
+      }
+
+      .order-notes-wrapper {
+        padding: 0px 16px !important;
+      }
+
+      .twoColTableColumnOuter {
+        padding: 0px !important;
+      }
+
+      .mobile-responsive-linebreak {
+        display: none;
+      }
+    }
+
+    /* Order Ready For Pickup -WUG */
+    @media only screen and (max-width: 767px) {
+      .stack-column-center {
+        display: block;
+        clear: both;
+        width: 100% !important;
+        text-align: center;
+      }
+
+      .left-align-text.inner {
+        margin-right: 0px !important;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .transactional-detail-component {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+      }
+
+      .transactional-detail-component__resizetofull {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+      }
+
+      .transactional-detail-component__container {
+        padding: 30px 16px 0px 16px !important;
+      }
+
+      .transactional-detail-component__fontSize14 {
+        font-size: 14px !important;
+        line-height: 1.43 !important;
+        letter-spacing: normal !important;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      .noteText-10 p {
+        font-size: 10px !important;
+      }
+
+      .noteText-11 p {
+        font-size: 11px !important;
+      }
+
+      .noteText-12 p {
+        font-size: 12px !important;
+      }
+
+      .noteText-13 p {
+        font-size: 13px !important;
+      }
+
+      .noteText-14 p {
+        font-size: 14px !important;
+      }
+
+      .noteText-15 p {
+        font-size: 15px !important;
+      }
+
+      .noteText-16 p {
+        font-size: 16px !important;
+      }
+
+      .noteText-17 p {
+        font-size: 17px !important;
+      }
+
+      .noteText-18 p {
+        font-size: 18px !important;
+      }
+
+      .noteText-19 p {
+        font-size: 19px !important;
+      }
+
+      .noteText-20 p {
+        font-size: 20px !important;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+
+      /* Custom Dark Mode Font Colors */
+      .mail-header,
+      .order-notes,
+      .order-detail-component td,
+      .order-detail-component__container td,
+      .order-container td,
+      .mail-footer,
+      .mail-footer a {
+        color: #AEAEAE !important;
+      }
+    }
+
+    @media (prefers-color-scheme: light) {
+
+      /* Custom Dark Mode Font Colors */
+      .mail-header,
+      .order-notes,
+      .order-detail-component td,
+      .order-detail-component__container td,
+      .order-container td,
+      .mail-footer,
+      .mail-footer a {
+        color: #4B4B4B !important;
+      }
+    }
+
+    .mail-header-banner-td {
+      height: 88px;
+    }
+  </style>
+  <!--[if gte mso 9]>     <style>         .list-item {           margin: 15px -20px !important;         }          li {         text-indent: -1em; /* Normalise space between bullets and text */         }     </style>     <![endif]-->
+  <!--[if mso 16]>     <style>       .mail-header-banner  {         color: #808080 !important;       }     </style>     <![endif]-->
+  <!--[if gte mso 9]>     <xml>         <o:OfficeDocumentSettings>             <o:AllowPNG/>             <o:PixelsPerInch>96</o:PixelsPerInch>         </o:OfficeDocumentSettings>     </xml>     <![endif]-->
+  <!--[if mso]>     <xml xmlns:w="urn:schemas-microsoft-com:office:word"><w:WordDocument><w:AutoHyphenation/></w:WordDocument></xml>     <![endif]-->
+  <!--[if !mso]><!-->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&amp;display=swap" rel="stylesheet"
+    type="text/css">
+  <!--<![endif]-->
+</head>
+
+<body cz-shortcut-listen="true">
+  <style>
+    @media only screen and (max-width: 767px) {
+      .order-container {
+        padding: 0 16px !important;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      #orderDetails2 {
+        margin: 12px 0px !important;
+      }
+
+      .twoColTableHeading {
+        padding: 0px 16px !important;
+      }
+
+      .order-notes-wrapper {
+        padding: 0px 16px !important;
+      }
+
+      .twoColTableColumnOuter {
+        padding: 0px !important;
+      }
+
+      .mobile-responsive-linebreak {
+        display: none;
+      }
+    }
+
+    /* Order Ready For Pickup -WUG */
+    @media only screen and (max-width: 767px) {
+      .stack-column-center {
+        display: block;
+        clear: both;
+        width: 100% !important;
+        text-align: center;
+      }
+
+      .left-align-text.inner {
+        margin-right: 0px !important;
+      }
+    }
+  </style>
+  <table role="presentation" id="ac-body-table" width="100%" height="100%" border="0" cellpadding="0" cellspacing="0"
+    style="border-collapse: collapse; height: 100%; width: 100%; margin: 0; padding: 0;background-color: #FFFFFF;       ">
+    <tbody>
+      <tr>
+        <td width="622" align="center" valign="top" id="ac-body-cell" style="width: 622px; padding: 30px">
+          <table role="presentation" id="ac-content-table" border="0" cellpadding="0" cellspacing="0" width="622"
+            style="border-collapse: collapse;width: 622px;background-color: #fff;">
+            <tbody>
+              <tr>
+                <td id="BodyContent">
+
+                  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+                    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+                  <script>
+                    //   C01	Global Header
+                    //   C02	Global Footer
+                    //   C28 	Hero Image Copy CTA(All Variations)
+                    //   C12 	1 - Col Headline Centered
+                    //   C13	Single Coupon
+                    //   C15 	Primary Button
+                    //   C16	Secondary Button
+                    //   C19	1 - Col Body Text Centered
+                    //   C21	Social Media Icons
+                    //   C25 	Promo
+                    //   C33	Graphic Header
+                    //   C06 / C18 / C35	3 - Col Content List / 3 - Column List
+                    //   C41 	Testimonial
+                    //   C61	Nav Links
+
+                    // 'header',
+                    // 'hero_image_copy_cta',
+                    // 'monday_hero_display_default',
+                    // 'hero',
+                    // '1_col_headline',
+                    // '1_col_headline_bold',
+                    // 'one-col-body-centered',
+                    // 'graphic_header',
+                    // '2_col_carousel',
+                    // '2_col_banner',
+                    // '3_col_list',
+                    // 'single_coupon',
+                    // 'primary_cta',
+                    // 'secondary_cta',
+                    // 'promo',
+                    // 'testimonial',
+                    // 'navigation_bar',
+                    // 'social_media_links',
+                    // 'footer'
+                    // //  Unused Components
+                    // 'order_notes',
+                    // 'order_detail_component',
+                    // 'order_notes_2',
+                    // 'next_order',
+                    var files = [
+                      'header',
+                      'monday_hero_display_default',
+                      '2_col_banner_image_right',
+                      '2_col_banner',
+                      'single_coupon',
+                      'navigation_bar',
+                      'social_media_links',
+                      'footer'
+                    ]
+                    files.forEach(file => $.get(file + ".html", html => $("#BodyContent").append(html)))
+                  </script>
+
+                  <style>
+                    .header-banner-container {
+                      background-size: cover;
+                    }
+
+                    .mail-header-banner {
+                      color: #000;
+                      -webkit-text-fill-color: #000;
+                    }
+
+                    [class="x_mail-header-banner"] {
+                      color: #808080 !important;
+                    }
+
+                    [data-ogsc] .mail-header-banner {
+                      color: #808080 !important;
+                    }
+
+                    .mail-header {
+                      /* background: red; */
+                    }
+                  </style>
+                  <!--[if !mso]> <style>  .mail-header-banner  {   color: #000 !important;   -webkit-text-fill-color: #000 !important;  } </style> <![endif]-->
+
+                  <table role="presentation" align="center" width="100%" border="0" cellspacing="0" cellpadding="0"
+                    class="mail-header" style="width: 100%;min-width: 100%;">
+                    <tbody>
+
+                      <tr>
+                        <td height="10" style="height: 10px;"></td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="line-height: 0px;"> <a style="line-height: 0px; display: block;"
+                            href="https://www-qa2.albertsons.com/?deeplinkuid=<%= escapeUrl(context.targetData.emailTokenTxt) %>&amp;cmpid=<%= escapeUrl(context.targetData.cmpId) %>&amp;HHID=<%= escapeUrl(context.targetData.householdId) %>&amp;Theme=<%= escapeUrl(context.targetData.themeNoSpace) %>">
+                            <img height="50" aria-label="Albertsons"
+                              src="https://images.albertsons-media.com/is/image/ABS/wm-ec-alb-logo?$lplogo$"
+                              class="img-safeway" style="height: 50px" alt="Albertsons">
+                          </a></td>
+                      </tr>
+                      <tr>
+                        <td height="10" style="height: 10px;"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table role="presentation" align="center" width="100%" border="0" cellspacing="0" cellpadding="0"
+                    class="monday-hero" style="
+        width:100%;
+        height: 100%;
+        ">
+
+                    <tbody>
+                      <tr>
+                        <td style="
+                    padding: 24px;
+                    background-color:#F6F6F6;
+                ">
+                          <table role="presentation" align="center" width="100%" border="0" cellspacing="0"
+                            cellpadding="0" style="width: 100%;">
+                            <tbody>
+
+                              <tr>
+                                <td align="center" style="padding-bottom: 12px;">
+                                  <img
+                                    src="https://images.albertsons-media.com/is/image/ABS/wm-ec-bt-mt-2021-08_JustforULogo?fmt=png-alpha"
+                                    alt="Just for u" border="0" width="128">
+                                </td>
+                              </tr>
+
+
+                              <tr>
+                                <td align="center" style="padding-bottom: 10px;
+                                    font-family: Nunito Sans, Arial, Sans-Serif;
+                                    color: #2c2a29;
+                                    font-size: 36px;
+                                    line-height: 40px;
+                                    font-weight: regular;
+                                    margin: 0;
+                                    " data-read-aloud-multi-block="true">
+
+
+
+
+                                  <p style="text-align: center;">Coupons for Spring Sippers</p>
+                                </td>
+                              </tr>
+
+
+                              <tr>
+                                <td align="center" style="
+                                    font-family: Nunito Sans, Arial, Sans-Serif;
+                                    color: #2c2a29;
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    font-weight: regular;
+                                    margin: 0;
+                                    " data-read-aloud-multi-block="true">
+
+
+
+                                  <p style="text-align: center;">Here's to warmer weather and springtime savings.Visit
+                                    <b>just for U<sup style="">®</sup></b> Coupons &amp; Deals today!</p>
+
+                                </td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding-top:16px; padding-bottom:16px;"></td>
+                      </tr>
+                    </tbody>
+
+                  </table>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"
+                    class="two-col-banner" dir="rtl"
+                    style="border-collapse: collapse;                             width: 100%;                             background-color: #ffffff;                           ">
+                    <tbody>
+                      <tr>
+                        <td class="two-col-banner-column column-banner-image"
+                          style="         width: 300px;         font-size: 0px;         line-height: 0px;         border-collapse: collapse;         border-width: 0;"
+                          align="center" valign="middle"> <img class="two-col-banner-column"
+                            src="https://images.albertsons-media.com/is/image/ABS/wm-ec-allb-welcome-t1-pears"
+                            width="300" height="262" style="height: 262px; width: 300px;"
+                            alt="Pear up savings and convenience"> </td>
+                        <td class="two-col-banner-column" align="center" valign="middle"
+                          style="background: #ffffff; width: 300px">
+                          <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" dir="ltr">
+                            <tbody>
+                              <tr>
+                                <td
+                                  style="                 mso-line-height-rule: exactly;                 text-align: left;                 padding: 24px 22px;             ">
+                                  <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+                                    <tbody data-read-aloud-multi-block="true">
+                                      <tr>
+                                        <td align="left" valign="top"
+                                          style="                             font-size: 16px;                             line-height: 22px;                             font-weight: normal;                             color: #2C2A29;                             mso-line-height-rule: exactly;                             text-align: left;">
+                                          <h3
+                                            style="                                         font-size: 26px;                                         line-height: 30px;                                         font-weight: bold;                                         color: #2C2A29;                                         margin: 0px;                                         mso-line-height-rule: exactly;                                         text-align: left;">
+                                            Personalized savings </h3>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td height="20" style="height: 20px"></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="left" valign="top"
+                                          style="                                     line-height: 22px;                                     font-weight: normal;                                     color: #2C2A29;                                     mso-line-height-rule: exactly;                                     text-align: left;                                     font-size: 16px;">
+                                          <p role="text"> </p>
+                                          <p><span>Explore our&nbsp;<b>just for U<sup>®</sup></b>&nbsp;program to add
+                                              deals, earn Rewards
+                                              points to redeem towards gas or groceries and save on the things you
+                                              already buy.</span></p>
+                                          <p></p>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td height="20" style="height: 20px"></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="left" style="text-align: left">
+                                          <table align="left" cellpadding="0" cellspacing="0" border="0"
+                                            role="presentation"
+                                            style="                                             border-collapse: collapse;                                             mso-table-lspace: 0pt;                                             mso-table-rspace: 0pt;">
+                                            <tbody>
+                                              <tr>
+                                                <td align="center" valign="middle"
+                                                  style="                                                     font-size: 18px;                                                     line-height: 18px;                                                     font-weight: bold;                                                     border-width: 1px;                                                     border-style: solid;                                                     background-color: #ffffff;                                                     border-color: #2C2A29;                                                     color: #2C2A29;                                                     margin-top: 0;                                                     margin-bottom: 0;                                                     margin-right: 0;                                                     margin-left: 0;                                                     mso-line-height-rule: exactly;                                                     text-align: center;                                                     padding-top: 12px;                                                     padding-right: 32px;                                                     padding-bottom: 12px;                                                     padding-left: 32px;">
+                                                  <a style="color: #2C2A29;font-family: Nunito Sans, Arial, Sans-Serif; text-decoration: none;"
+                                                    x-cq-linkchecker="skip"
+                                                    href="https://safewayinc-mkt-stage4-t.adobe-campaign.com/r/?id=h337a10%2C423806%2C423fe3&amp;p1=20210830&amp;p2=20210830&amp;s=2VFp46pnsRbi5LHlr5CdF0eUymwRkna8rghqy8X_A3Q"
+                                                    aria-label="Sign In" target="_blank"><span>Sign In</span></a>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" height="30" style="height:30px"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"
+                    class="two-col-banner" dir="ltr" style="border-collapse: collapse;
+                            width: 100%;
+                            background-color: #ffffff;
+                          ">
+                    <tbody>
+                      <tr>
+
+                        <td class="two-col-banner-column column-banner-image" style="
+        font-size: 0px;
+        line-height: 0px;
+        border-collapse: collapse;
+        border-width: 0;" align="center" valign="middle">
+                          <img class="two-col-banner-column"
+                            src="https://images.albertsons-media.com/is/image/ABS/wm-ec-bt-mt-2021-12_Bacardi_New"
+                            width="300" height="262" style="height: 262px;" alt="Spring Drinks">
+                        </td>
+
+
+                        <td class="two-col-banner-column" align="center" valign="middle" style="background: #00529f; ">
+                          <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" dir="ltr">
+                            <tbody>
+                              <tr>
+                                <td style="
+                mso-line-height-rule: exactly;
+                text-align: left;
+                padding: 24px 22px;
+            ">
+                                  <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+
+                                    <tbody data-read-aloud-multi-block="true">
+                                      <tr>
+                                        <td align="left" valign="top" style="
+                            font-size: 16px;
+                            line-height: 22px;
+                            font-weight: normal;
+                            color: white;
+                            mso-line-height-rule: exactly;
+                            text-align: left;">
+                                          <h3 style="
+                                        font-size: 26px;
+                                        line-height: 30px;
+                                        font-weight: bold;
+                                        color: white;
+                                        margin: 0px;
+                                        mso-line-height-rule: exactly;
+                                        text-align: left;">
+                                            Hand-Picked Coupons
+                                          </h3>
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td height="22" style="height: 22px"></td>
+                                      </tr>
+
+                                      <tr>
+                                        <td align="left" valign="top" style="
+                                    line-height: 22px;
+                                    font-weight: normal;
+                                    color: white;
+                                    mso-line-height-rule: exactly;
+                                    text-align: left;
+                                    font-size: 16px;">
+                                          <p role="text">
+                                          </p>
+                                          <p>Deals you can savor and use in a variety of your favorite cocktails.</p>
+
+                                          <p></p>
+                                        </td>
+                                      </tr>
+
+
+                                      <tr>
+                                        <td height="16" style="height: 16px"></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="left" style="text-align: left">
+                                          <table align="left" cellpadding="0" cellspacing="0" border="0"
+                                            role="presentation" style="
+                                            border-collapse: collapse;
+                                            mso-table-lspace: 0pt;
+                                            mso-table-rspace: 0pt;">
+                                            <tbody>
+                                              <tr>
+                                                <td align="center" valign="middle" style="
+                                                    font-size: 18px;
+                                                    line-height: 18px;
+                                                    font-weight: bold;
+                                                    border-width: 1px;
+                                                    border-style: solid;
+                                                    background-color: #00529f;
+                                                    border-color: #ffffff;
+                                                    color: #ffffff;
+                                                    margin-top: 0;
+                                                    margin-bottom: 0;
+                                                    margin-right: 0;
+                                                    margin-left: 0;
+                                                    mso-line-height-rule: exactly;
+                                                    text-align: center;
+                                                    padding-top: 12px;
+                                                    padding-right: 32px;
+                                                    padding-bottom: 12px;
+                                                    padding-left: 32px;">
+
+
+                                                  <a style="color: #ffffff;font-family: Nunito Sans, Arial, Sans-Serif; text-decoration: none;"
+                                                    x-cq-linkchecker="skip"
+                                                    href="https://safewayinc-mkt-stage4-t.adobe-campaign.com/r/?id=h387521%2C544603%2C544608&amp;p1=https%3A%2F%2Fwww-qa2.albertsons.com%2Fjustforu%2Fcoupons-deals.html%3FCmpid%3Dem_alb_sow_loyl__thme__20210118%26FullSite%3DY%26deeplinkuid%3DvKF0jIHDC1Ky%2FsUARIscJg%3D%3D%26Theme%3DBacardi%26HHID%3D170112564059&amp;deeplinkuid=vKF0jIHDC1Ky%2FsUARIscJg%3D%3D&amp;Cmpid=em_alb_sow_loyl__thme__20210118&amp;HHID=170112564059&amp;Theme=Bacardi&amp;p2=offer_token_280%2Ckzv95CRGq1X5dqqV2qMCTQ%3D%3DC0%2ChTz1vn7kS6Mfv3N1YOionw%3D%3DC0%2CNdsMH1L_zPGi9OhKTW-_Mg%3D%3DC0%2CGpAYXM0lFLZ5ur-qtCjs4Q%3D%3DC0&amp;s=fzcyxuyGy16Ny2oRUP8BEQbT7AjPqb-U4L8K5qe_f9g"
+                                                    aria-label="Clip All Coupons" target="_blank"><span>Clip All
+                                                      Coupons</span></a>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+
+
+                      </tr>
+                      <tr>
+                        <td colspan="2" height="30" style="height:30px"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"
+                    style="width: 100%; background: #ffffff;">
+                    <tbody>
+                      <tr>
+                        <td style="padding: 0px 22px 30px;" align="center" valign="top">
+                          <table id="single-coupon-wrapper" role="presentation" cellpadding="0" border="0"
+                            cellspacing="0" width="450" style="
+            border: 1px solid #dedede;
+            width: 450px;
+            max-width: 450px;
+          ">
+                            <tbody>
+                              <tr>
+                                <td style="" class="single-coupon-container">
+                                  <table role="presentation" cellpadding="0" border="0" cellspacing="0" width="100%"
+                                    style="width: 100%;">
+                                    <tbody>
+                                      <tr>
+                                        <td class="single-coupon-column single-coupon-img-wrapper" style="
+                        padding: 48px 36px 0px 36px;
+                        font-size: 0px;
+                        line-height: 0px;
+                        border-collapse: collapse;
+                        border-width: 0;
+                      " align="left" valign="top">
+                                          <img src="https://www.safeway.com/CMS/j4u/offers/images/777930.gif"
+                                            width="120" height="120" class="single-coupon-img" style="
+                          width: 120px;
+                          height: 120px;
+                          max-width:120px;
+                        " alt="Single coupon">
+                                        </td>
+                                        <td class="single-coupon-column" align="left" valign="top" style="
+                      padding: 32px 0;
+                        font-family: Nunito Sans, Arial, Sans-Serif;
+                        font-weight: normal;
+                        color: #2c2a29;
+                        margin: 0;
+                        mso-line-height-rule: exactly;
+                        text-align: left;
+                      ">
+                                          <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody data-read-aloud-multi-block="true">
+                                              <tr>
+                                                <td style="
+                              padding: 0px 0px 8px 0px;
+                            ">
+                                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td align="left" valign="middle" style="
+                                    vertical-align: middle;
+                                    font-size: 0;
+                                  ">
+                                                          <img
+                                                            src="https://images.albertsons-media.com/is/image/ABS/wm-ec-allb-just-for-you-offers"
+                                                            width="24" alt="U" style="
+                                      width: 24px;
+                                      height: auto;
+                                      padding-right: 6px;
+                                      vertical-align: middle;
+                                    ">
+                                                        </td>
+                                                        <td align="left" valign="middle" style="
+                                    margin-bottom: 6px;
+                                    text-align: left;
+                                  ">
+                                                          <h5 style="
+                                      font-weight: bold;
+                                      font-size: 17px;
+                                      margin: 0px;
+                                      color: #2c2a29;
+                                    ">
+                                                            Single Offer $0.50 OFF
+                                                          </h5>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td style="
+                              margin-bottom: 8px;
+                              text-align: left;
+                            ">
+                                                  <p style="
+                                line-height: 18px;
+                                font-size: 14px;
+                                font-weight: bold;
+                                color: #2c2a29;
+                                margin: 0px;
+                              ">
+                                                    Betty Crocker Muffin Mix
+                                                  </p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td style="
+                              margin-bottom: 8px;
+                              text-align: left;
+                            ">
+                                                  <p style="
+                                line-height: 18px;
+                                font-size: 14px;
+                                font-weight: normal;
+                                color: #2c2a29;
+                                margin: 0px;
+                              ">
+                                                    12.75 to 18.25-oz. Limit 3
+                                                  </p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td style="
+                              padding-top: 24px;
+                              padding-bottom: 24px;
+                            ">
+                                                  <table class="cta-container" cellpadding="0" cellspacing="0"
+                                                    border="0" role="presentation" style="
+                                border-collapse: collapse;
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                                margin-right: auto;
+                              ">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td align="center" valign="middle" style="
+                                      font-size: 16px;
+                                      line-height: 22px;
+                                      font-weight: bold;
+                                      background-color: #00529f;
+                                      color: #ffffff;
+                                      margin: 0;
+                                      mso-line-height-rule: exactly;
+                                      text-align: center;
+                                      width:170px;
+                                      height:40px;
+                                    ">
+
+                                                          <a href="https://safewayinc-mkt-stage4-t.adobe-campaign.com/r/?id=h386969%2C5441ea%2C5441ed&amp;p1=https%3A%2F%2Fwww-qa2.albertsons.com%2Fjustforu%2Fcoupons-deals.html%3FCmpid%3Dem_alb_alld_loyl__thme__20210118%26FullSite%3DY%26deeplinkuid%3DvKF0jIHDC1Ky%2FsUARIscJg%3D%3D%26Theme%3DBacardi%26HHID%3D170112564059&amp;deeplinkuid=vKF0jIHDC1Ky%2FsUARIscJg%3D%3D&amp;Cmpid=em_alb_alld_loyl__thme__20210118&amp;HHID=170112564059&amp;Theme=Bacardi&amp;p2=offer_token_280&amp;s=rQlL-gfjmt1y6HPng76qj3xCUqjgirBPrTTL0Ts7kQg"
+                                                            x-cq-linkchecker="skip" target="_blank"
+                                                            aria-label="Clip Coupon for Betty Crocker Muffin Mix"
+                                                            style=" color: #ffffff; text-decoration: none;"> Clip
+                                                            Coupon</a>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td style="text-align: left;">
+                                                  <p style="
+                                font-size: 13px;
+                                font-weight: normal;
+                                color:#2c2a29;
+                                margin: 0px;
+                              ">
+                                                    Expires: 10/06/2021
+                                                  </p>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <style>
+                    table.mail-mobile-app {
+                      /* background: aqua; */
+                    }
+
+                    table.mail-mobile-app a {
+                      display: block;
+                    }
+                  </style>
+
+                  <table role="presentation" align="center" width="100%" border="0" cellspacing="0" cellpadding="0"
+                    class="mail-mobile-app" style="width: 100%;">
+                    <tbody>
+
+                      <tr>
+                        <td colspan="3" height="5" style="height: 5px;"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" width="100%" style="width: 100%; min-width: 100%">
+                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                            style="table-layout: fixed; width: 100%; font-size: 16px !important;"
+                            class="mobile-app-buttons">
+                            <tbody>
+                              <tr>
+                                <td height="5" width="5" style="height: 5px; width: 5px;"></td>
+                                <td class="mobile-app-button" align="center" valign="center"
+                                  style="background:#f6f6f6; height:50px;">
+                                  <a style="font-family: 'Nunito Sans', Arial, Sans-Serif;letter-spacing: 0;color:#2c2a29; text-decoration:none; font-weight:bold;"
+                                    x-cq-linkchecker="skip"
+                                    href="https://safewayinc-mkt-stage3-t.adobe-campaign.com/r/?id=h2d89b7a%2C266a231%2C266a23d&amp;p1=jNo6TEXTNRXvqbsLzWoPyA%3D%3D&amp;p2=em_tth_sow_loyl__freesolo__20210603&amp;p3=990010980097&amp;p4=FridaySavings&amp;s=Z-xK2HvdXXMg1LvC9hxTCKR0zAFQK-ye4q_dYYTDUT4">Shop</a>
+                                </td>
+                                <td height="5" width="5" style="height: 5px; width: 5px;"></td>
+                                <td class="mobile-app-button" align="center" valign="center"
+                                  style="background:#f6f6f6; height:50px;">
+                                  <a style="font-family: 'Nunito Sans', Arial, Sans-Serif;letter-spacing: 0;color:#2c2a29; text-decoration:none; font-weight:bold;"
+                                    x-cq-linkchecker="skip"
+                                    href="https://safewayinc-mkt-stage3-t.adobe-campaign.com/r/?id=h2d89b7a%2C266a231%2C266a23e&amp;p1=jNo6TEXTNRXvqbsLzWoPyA%3D%3D&amp;p2=em_tth_sow_loyl__freesolo__20210603&amp;p3=990010980097&amp;p4=FridaySavings&amp;s=hpjUwoc9ftjVK1E8bFo5XLSyqK6REoh2myLRNuCDftE">just
+                                    for U</a>
+                                </td>
+                                <td height="5" width="5" style="height: 5px; width: 5px;"></td>
+                                <td class="mobile-app-button" align="center" valign="center"
+                                  style="background:#f6f6f6; height:50px;">
+                                  <a style="font-family: 'Nunito Sans', Arial, Sans-Serif;letter-spacing: 0;color:#2c2a29; text-decoration:none; font-weight:bold;"
+                                    x-cq-linkchecker="skip"
+                                    href="https://safewayinc-mkt-stage3-t.adobe-campaign.com/r/?id=h2d89b7a%2C266a231%2C266a23f&amp;p1=jNo6TEXTNRXvqbsLzWoPyA%3D%3D&amp;p2=em_tth_sow_loyl__freesolo__20210603&amp;p3=990010980097&amp;p4=FridaySavings&amp;s=zXXWgXMt3-120WL-yqwZ2HSiTzVcDx1i3-bnAe-aDao">Sign
+                                    In</a>
+                                </td>
+                                <td height="5" width="5" style="height: 5px; width: 5px;"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" height="5" style="height: 5px;"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <style>
+                    table.mail-social-links {
+                      /* background: yellow; */
+                    }
+
+                    table.mail-social-links a {
+                      display: block;
+                      line-height: 0px;
+                    }
+                  </style>
+
+
+                  <table role="presentation" align="center" width="100%" border="0" cellspacing="0" cellpadding="0"
+                    class="mail-social-links" style="width: 100%;" data-compname="social-links">
+                    <tbody>
+                      <tr>
+                        <td align="center">
+                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+                            <tbody>
+                              <tr>
+                                <td style="height: 16px;" height="16"></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <a href="https://safewayinc-mkt-stage3-t.adobe-campaign.com/r/?id=h2d89b7a%2C266a231%2C266a240&amp;s=qhmWr7uLWLWkWBdaLOMJXCSNgv92a3-f3jAvtnXo-Ts"
+                                    x-cq-linkchecker="skip"><img
+                                      src="https://images.albertsons-media.com/is/image/ABS/wm-ec-allb-facebook_rd"
+                                      height="32" width="32" alt="Share by Facebook">
+                                  </a>
+                                </td>
+                                <td style="width: 16px;" width="16"></td>
+                                <td>
+                                  <a href="https://safewayinc-mkt-stage3-t.adobe-campaign.com/r/?id=h2d89b7a%2C266a231%2C266a241&amp;s=oledNo16ugfldmfJKMk0MeCgV8FNsHpoAcyq12hwlV4"
+                                    x-cq-linkchecker="skip"><img
+                                      src="https://images.albertsons-media.com/is/image/ABS/wm-ec-allb-instagram_rd"
+                                      height="32" width="32" alt="Share by Instagram"></a>
+                                </td>
+                                <td style="width: 16px;" width="16"></td>
+                                <td>
+                                  <a href="https://safewayinc-mkt-stage3-t.adobe-campaign.com/r/?id=h2d89b7a%2C266a231%2C266a242&amp;s=dTsSur7NQWsXS0uH6m1tsMCXFG--KHieIz6TKvj2UKg"
+                                    x-cq-linkchecker="skip"><img
+                                      src="https://images.albertsons-media.com/is/image/ABS/wm-ec-allb-pinterest_rd"
+                                      height="32" width="32" alt="Share by Pinterest"></a>
+                                </td>
+                                <td style="width: 16px;" width="16"></td>
+                                <td>
+                                  <a href="https://safewayinc-mkt-stage3-t.adobe-campaign.com/r/?id=h2d89b7a%2C266a231%2C266a243&amp;s=Oq9X5NJro_srBPhPunu96QQlwviKoqngvcK_xa0V43Q"
+                                    x-cq-linkchecker="skip"><img
+                                      src="https://images.albertsons-media.com/is/image/ABS/wm-ec-allb-twitter_rd"
+                                      height="32" width="32" alt="Share by Twitter"></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="height: 16px;" height="16"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <style>
+                    .mail-footer {
+                      /* background: orange; */
+                    }
+
+                    .mail-footer a {
+                      text-decoration: underline;
+                    }
+                  </style>
+
+                  <table role="presentation" align="center" width="100%" border="0" cellspacing="0" cellpadding="0"
+                    class="mail-footer" style="
+                font-family: 'Nunito Sans', Arial, Sans-Serif;
+                letter-spacing: 0;
+                line-height: 16px;
+                font-size: 12px;
+                color: #757575;
+                width: 100%;
+                margin: 0 auto;">
+                    <tbody>
+
+
+                      <tr>
+                        <td align="center">
+                          You’ve received this email because our records indicate you supplied&nbsp;an email address
+                          when you created an
+                          account for on of our programs, contacted us via our website or signed-up via our website,
+                          mobile app&nbsp;or
+                          sweepstakes to receive email.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="16" style="height: 16px;"></td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          &nbsp;Emails are sent from the&nbsp;
+                          <a href="mailto:no-reply@offers.tomthumb.com"
+                            x-cq-linkchecker="skip">no-reply@offers.tomthumb.com</a>
+                          &nbsp;domain. Please add&nbsp;
+                          <a href="mailto:no-reply@offers.tomthumb.com"
+                            x-cq-linkchecker="skip">no-reply@offers.tomthumb.com</a>
+                          &nbsp;to your address book and safe sender list.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="16" style="height: 16px;"></td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <a style="color:#2C2A29;font-weight:700; "
+                            href="https://safewayinc-mkt-stage3-t.adobe-campaign.com/r/?id=h2d89b7a%2C266a231%2C266a247&amp;p1=%40ytF3p1h8TN0O49Rw-yG9p79zSgGuqYPt9UY3GgBp_bLI11Wipr4MRc-5VKLqyzZlFKAIqe3TmekMIlQZkuUhmqjOfqh6XXlDvXHkmQ8kTMW6P9-k&amp;s=sb6AJLYWPbB-E2I8nh0yFhN7slANCM1UTu5YmhoUyl4">Web
+                            Version</a>
+                          <span style="color: #757575;">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                          <a style="color:#2C2A29;font-weight:700; font-size: 12px; line-height: 18px; text-decoration:underline;"
+                            href="https://safewayinc-mkt-stage3-t.adobe-campaign.com/r/?id=h2d89b7a%2C266a231%2C266a244&amp;p1=jNo6TEXTNRXvqbsLzWoPyA%3D%3D&amp;p2=em_tth_sow_loyl__freesolo__20210603&amp;p3=990010980097&amp;p4=FridaySavings&amp;p5=&amp;s=M2yVqAS6YdV9ZXePbu-hSnnvYtw0aDZausFeu33v_q4"
+                            x-cq-linkchecker="skip">Unsubscribe</a>
+                          <span style="color: #757575;">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                          <a style="color:#2C2A29; font-weight:700; font-size: 12px; line-height: 18px; text-decoration:underline;"
+                            href="https://safewayinc-mkt-stage3-t.adobe-campaign.com/r/?id=h2d89b7a%2C266a231%2C266a245&amp;p1=jNo6TEXTNRXvqbsLzWoPyA%3D%3D&amp;p2=em_tth_sow_loyl__freesolo__20210603&amp;p3=990010980097&amp;p4=FridaySavings&amp;s=G4AEeVeT_5d1PRkWbMURtLGNa9UoeJ3XDmO_acbzQzE"
+                            x-cq-linkchecker="skip">Privacy Policy</a>
+                          <span style="color: #757575;">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                          <a style="color:#2C2A29; font-weight:700; font-size: 12px; line-height: 18px; text-decoration:underline;"
+                            href="https://safewayinc-mkt-stage3-t.adobe-campaign.com/r/?id=h2d89b7a%2C266a231%2C266a246&amp;p1=jNo6TEXTNRXvqbsLzWoPyA%3D%3D&amp;p2=em_tth_sow_loyl__freesolo__20210603&amp;p3=990010980097&amp;p4=FridaySavings&amp;s=NaBoxs_uOYZw3k-A9ZadiwS6xLtegwyDpmZ1-6NEKRg"
+                            x-cq-linkchecker="skip">Digital Accessibility</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="16" style="height: 16px;"></td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <p>Copyright 2020 by Albertsons Companies, Inc. All rights reserved</p>
+                          <p>Contact us at 250 E. Parkcenter Blvd., Boise, ID 83706.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- Code injected by live-server -->
+  <script type="text/javascript">
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+      (function () {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName("link"));
+          var head = document.getElementsByTagName("head")[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            parent.appendChild(elem);
+          }
+        }
+        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address = protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
+        socket.onmessage = function (msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+        };
+        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+          console.log('Live reload enabled.');
+          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+        }
+      })();
+    }
+    else {
+      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+	// ]]>
+  </script>
+
+
+  <img height="0" width="0" alt="" src="https://safewayinc-mkt-stage3-t.adobe-campaign.com/r/?id=h305ae8b,3dda199,1">
+</body>
+<div id="__genieContainer" style="all: initial;"></div>
+
+</html>

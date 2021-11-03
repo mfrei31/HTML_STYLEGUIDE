@@ -1,0 +1,90 @@
+1) create tickets for the rest of the components (ETA 8/25)
+2) send river a follow up email with all the tickets (ETA 8/25)
+3) create support ticket for ADA team and attach monday and free solo campaign HTMLs - regular and dark mode (ETA 8/26)
+4) cleanup checklist for components, ie dark mode, styles, etc  (ETA 8/26)
+5) create HTML for each campaign and reference in confluence (ETA 8/27)
+
+
+622px width
+Dark mode
+Other styleguide changes - padding, fonts, size, color
+Litmus testing acorss web and mobile
+Proofing
+Static asset references
+Submitted emails for ADA validation
+
+
+
+HTML Review: 1-Col Headline Centered (C12, C39)
+HTML Review: Headline (C39, C12)
+HTML Review: 1-Col Body Text Centered (C19)
+HTML Review: Horizontal Divider  (C14)
+HTML Review: Graphic Header  (C33)
+HTML Review: Vertical Spacer (C44)
+HTML Review: Testimonial (C43)
+HTML Review: Hero Image Copy CTA (C28)
+HTML Review: DUG Hero Image Copy CTA (C28)
+HTML Review: Call to Action (C23, C05)
+HTML Review: Hero Display (C05, C23)
+HTML Review: Hero Image Top Full (C04)
+HTML Review: Image Only (C03, C24)
+HTML Review: Promo (C25)
+HTML Review: 2- Col Banner Image Left (C09)
+HTML Review: 2- Col Banner Image Right (C10)
+HTML Review: 2-Col Weekly Ad Cover (C11)
+HTML Review: 3-Col Rewards Summary (C06, C18, C35)
+HTML Review: 2-Col Savings Summary (C36, C37)
+HTML Review: 2-Col Tile (C26)
+HTML Review: Content Tile Block (C29)
+HTML Review: 2-Col Recipe (C34)
+HTML Review: Letter (C20)
+HTML Review: Headline Copy Text CTA (C40)
+HTML Review: Left Image Right Copy Button (C38)
+
+
+
+https://jira.safeway.com/browse/MPU-225	Global Header (C01)
+https://jira.safeway.com/browse/MPU-226	Global Footer (C02)
+https://jira.safeway.com/browse/MPU-227	Social Links (C21)
+https://jira.safeway.com/browse/MPU-228	Navigation Bar (C32, C61)
+	 
+https://jira.safeway.com/browse/MPU-245	Mobile App/ App Badge (C17, C31)
+https://jira.safeway.com/browse/MPU-246	2-Col Carousel (C07, C08, C42)
+https://jira.safeway.com/browse/MPU-247	Single Coupon (C13, C41)
+https://jira.safeway.com/browse/MPU-248	Dynamic Products (C22, C30)
+https://jira.safeway.com/browse/MPU-249	Ecom Product Card - No Price (C30, C22)
+https://jira.safeway.com/browse/MPU-250	Primary Button (C15)
+https://jira.safeway.com/browse/MPU-251	Secondary Button (C16)
+
+https://jira.safeway.com/browse/MPU-254	HTML Review: 1-Col Headline Centered (C12, C39)
+https://jira.safeway.com/browse/MPU-255	HTML Review: Headline (C39, C12)
+https://jira.safeway.com/browse/MPU-256	HTML Review: 1-Col Body Text Centered (C19)
+https://jira.safeway.com/browse/MPU-257	HTML Review: Horizontal Divider  (C14)
+https://jira.safeway.com/browse/MPU-258	HTML Review: Graphic Header  (C33)
+https://jira.safeway.com/browse/MPU-259	HTML Review: Vertical Spacer (C44)
+https://jira.safeway.com/browse/MPU-260	HTML Review: Testimonial (C43)
+	
+https://jira.safeway.com/browse/MPU-261	HTML Review: Hero Image Copy CTA (C28)
+https://jira.safeway.com/browse/MPU-262	HTML Review: DUG Hero Image Copy CTA (C28)
+https://jira.safeway.com/browse/MPU-263	HTML Review: Call to Action (C23, C05)
+https://jira.safeway.com/browse/MPU-264	HTML Review: Hero Display (C05, C23)
+https://jira.safeway.com/browse/MPU-265	HTML Review: Hero Image Top Full (C04)
+https://jira.safeway.com/browse/MPU-266	HTML Review: Image Only (C03, C24)
+	
+https://jira.safeway.com/browse/MPU-267	HTML Review: Promo (C25)
+https://jira.safeway.com/browse/MPU-268	HTML Review: 2- Col Banner Image Left (C09)
+https://jira.safeway.com/browse/MPU-269	HTML Review: 2- Col Banner Image Right (C10)
+https://jira.safeway.com/browse/MPU-270	HTML Review: 2-Col Weekly Ad Cover (C11)
+https://jira.safeway.com/browse/MPU-271	HTML Review: 3-Col Rewards Summary (C06, C18, C35)
+https://jira.safeway.com/browse/MPU-272	HTML Review: 2-Col Savings Summary (C36, C37)
+	
+https://jira.safeway.com/browse/MPU-273	HTML Review: 2-Col Tile (C26)
+https://jira.safeway.com/browse/MPU-274	HTML Review: Content Tile Block (C29)
+https://jira.safeway.com/browse/MPU-275	HTML Review: 2-Col Recipe (C34)
+https://jira.safeway.com/browse/MPU-276	HTML Review: Letter (C20)
+https://jira.safeway.com/browse/MPU-277	HTML Review: Headline Copy Text CTA (C40)
+https://jira.safeway.com/browse/MPU-278	HTML Review: Left Image Right Copy Button (C38)
+
+Mobile App/ App Badge
+Dynamic Products
+Ecom Product Card - No Price

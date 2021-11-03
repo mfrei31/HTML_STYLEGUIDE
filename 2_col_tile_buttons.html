@@ -1,0 +1,36 @@
+<style>
+  .tileButtons a {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  $(".priceToggleLink").click(function () {
+    $(".priceToggle").toggle();
+  });
+  $(".iconToggleLink").click(function () {
+    $(".iconToggle").toggle();
+  });
+  $(".buttonToggleLink").click(function () {
+    $(".buttonToggle").toggle();
+  });
+  $(".imageToggleLink").click(function () {
+    $(".imageToggle").toggle();
+  });
+</script>
+
+<table role="presentation" align="center" width="100%" border="0" cellspacing="0" cellpadding="0"
+  style="width: 100%; height:100%;" class="tileButtons">
+  <tbody>
+    <tr>
+      <td style="color: white; background: green; text-align: center;">Toggle:
+        <a class="priceToggleLink">Price</a> |
+        <a class="iconToggleLink">Icon</a> |
+        <a class="buttonToggleLink">Button</a> |
+        <a class="imageToggleLink">Image</a> |
+      </td>
+    </tr>
+
+  </tbody>
+</table>

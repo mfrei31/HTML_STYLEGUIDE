@@ -1,0 +1,44 @@
+<style>
+  .header-banner-container {
+    background-size: cover;
+  }
+
+  .mail-header-banner {
+    color: #000;
+    -webkit-text-fill-color: #000;
+  }
+
+  [class="x_mail-header-banner"] {
+    color: #808080 !important;
+  }
+
+  [data-ogsc] .mail-header-banner {
+    color: #808080 !important;
+  }
+
+  .mail-header {
+    /* background: red; */
+  }
+</style>
+<!--[if !mso]> <style>  .mail-header-banner  {   color: #000 !important;   -webkit-text-fill-color: #000 !important;  } </style> <![endif]-->
+
+<table role="presentation" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="mail-header"
+  style="width: 100%;min-width: 100%;">
+  <tbody>
+
+    <tr>
+      <td height="10" style="height: 10px;"></td>
+    </tr>
+    <tr>
+      <td align="center" style="line-height: 0px;"> <a style="line-height: 0px; display: block;"
+          href="https://www-qa2.albertsons.com/?deeplinkuid=<%= escapeUrl(context.targetData.emailTokenTxt) %>&amp;cmpid=<%= escapeUrl(context.targetData.cmpId) %>&amp;HHID=<%= escapeUrl(context.targetData.householdId) %>&amp;Theme=<%= escapeUrl(context.targetData.themeNoSpace) %>">
+          <img height="50" aria-label="Albertsons"
+            src="https://images.albertsons-media.com/is/image/ABS/wm-ec-alb-logo?$lplogo$" class="img-safeway"
+            style="height: 50px" alt="Albertsons">
+        </a></td>
+    </tr>
+    <tr>
+      <td height="10" style="height: 10px;"></td>
+    </tr>
+  </tbody>
+</table>
